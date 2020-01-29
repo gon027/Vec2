@@ -24,51 +24,48 @@ public:
     }
 
     const Vec2 operator-() const{
-        return {-this->x, -this->y};
+        return { -this->x, -this->y };
     }
 
     const Vec2 operator+(const Vec2& _rvec) const{
-        return {this->x + _rvec.x, this->y + _rvec.y};
+        return { this->x + _rvec.x, this->y + _rvec.y };
     }
 
     const Vec2 operator-(const Vec2 &_rvec) const{
-        return {this->x - _rvec.x, this->y - _rvec.y};
+        return { this->x - _rvec.x, this->y - _rvec.y };
     }
 
     const Vec2 operator*(const Vec2 &_rvec) const{
-        return {this->x * _rvec.x, this->y * _rvec.y};
+        return { this->x * _rvec.x, this->y * _rvec.y };
     }
 
     const Vec2 operator/(const Vec2 &_rvec) const{
-        return {this->x / _rvec.x, this->y / _rvec.y};
+        return { this->x / _rvec.x, this->y / _rvec.y };
     }
 
-    Vec2& operator+=(const Vec2& _rvec){
+    const Vec2& operator+=(const Vec2& _rvec){
         this->x += _rvec.x;
         this->y += _rvec.y;
         return *this;
     }
 
-    Vec2 &operator-=(const Vec2 &_rvec){
+    const Vec2 &operator-=(const Vec2 &_rvec){
         this->x -= _rvec.x;
         this->y -= _rvec.y;
         return *this;
     }
 
-    Vec2 &operator*=(const Vec2 &_rvec){
+    const Vec2 &operator*=(const Vec2 &_rvec){
         this->x *= _rvec.x;
         this->y *= _rvec.y;
         return *this;
     }
 
-    Vec2 &operator/=(const Vec2 &_rvec){
+    const Vec2 &operator/=(const Vec2 &_rvec){
         this->x /= _rvec.x;
         this->y /= _rvec.y;
         return *this;
     }
 };
-
-
-
 
 #endif // VEC2_H
