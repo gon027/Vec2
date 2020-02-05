@@ -43,7 +43,7 @@ public:
         return { this->x / _rvec.x, this->y / _rvec.y };
     }
 
-    const Vec2& operator+=(const Vec2& _rvec){
+    const Vec2 &operator+=(const Vec2& _rvec){
         this->x += _rvec.x;
         this->y += _rvec.y;
         return *this;
